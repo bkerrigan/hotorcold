@@ -1,10 +1,10 @@
 # Is It Hot Or Cold?
 
-Welcome to the Is It Hot Or Cold! 
+Welcome to the Is It Hot Or Cold!
 
 This Ruby on Rails application allows users to enter an address and receive the current weather conditions for that location. It utilizes various APIs to fetch the weather data and provides a user-friendly interface for displaying the information.
 
-This project is dedicated my 4 year old son who will constantly ask "Daddy, is it hot or cold
+This project is dedicated to my 4 year old son who will constantly ask "Daddy, is it hot or cold
 today?" in the morning when getting dressed (no matter what the weather was like the previous day).
 
 ## Features
@@ -90,6 +90,14 @@ Once the application is up and running, follow these steps to use the Is It Hot 
 4. You will see details such as the current temperature, high and low temps, wind speed, and weather description.
 
 5. To retrieve weather information for another address, simply enter a new address in the input field and click the "Search" button again.
+
+## Testing
+
+1. Run the system tests with the following command
+
+```shell
+ bin/rails test:system
+ ```
 
 ## License
 

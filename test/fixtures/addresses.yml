@@ -1,11 +1,46 @@
 first:
-  postal_code: 77399
+  postal_code: 90210
   country_code: 'us'
+  weather_data:
+    main:
+      temp: 64.9
+      feels_like: 64.67
+      temp_min: 58.68
+      temp_max: 72.91
+      pressure: 1007
+      humidity: 76
+    wind:
+      speed: 14.97
+      deg: 240
+    clouds:
+      all: 0
+    name: Beverly Hills
+    weather:
+      - id: 800
+        main: Clear
+        description: clear sky
+        icon: 01n
 
-second:
-  postal_code: 65803
+secondt:
+  postal_code: 53711
   country_code: 'us'
-
-third:
-  postal_code: 10024
-  country_code: 'us'
+  updated_at: <%= 5.minutes.ago %>
+  weather_data:
+    main:
+      temp: 64.9
+      feels_like: 64.67
+      temp_min: 58.68
+      temp_max: 72.91
+      pressure: 1007
+      humidity: 76
+    wind:
+      speed: 14.97
+      deg: 240
+    clouds:
+      all: 0
+    name: Madison
+    weather:
+      - id: 800
+        main: Clear
+        description: clear sky
+        icon: 01n

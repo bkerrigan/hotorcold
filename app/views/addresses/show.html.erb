@@ -2,7 +2,7 @@
   <%= render "home/form" %>
   <% weather_data = @address.get_weather() %>
   <main class="container">
-    <h2>Weather information for <%= weather_data["name"] %></h2>
+    <h2 id='weather-header'>Weather information for <%= weather_data["name"] %></h2>
     <p>
     <span><b>Current Temperature:</b> <%= weather_data["main"]["temp"] %></span>
     <span><b>Feels Like:</b> <%= weather_data["main"]["feels_like"] %></span>
@@ -16,7 +16,7 @@
     <span><b>Wind Speed:</b> <%= weather_data["wind"]["speed"] %>%</span>
     </p>
     <% if @address.updated_at < 10.seconds.ago %>
-      <p>Results updated at <%= @address.updated_at %>
+      <p id="cache-updated-at">Results updated at <%= @address.updated_at %>
     <% end %>
   </main>
 <% end %>
