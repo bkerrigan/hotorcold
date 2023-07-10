@@ -1,0 +1,11 @@
+first:
+  postal_code: 77399
+  country_code: 'us'
+
+second:
+  postal_code: 65803
+  country_code: 'us'
+
+third:
+  postal_code: 10024
+  country_code: 'us'

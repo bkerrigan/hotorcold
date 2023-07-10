@@ -1,0 +1,22 @@
+<%= turbo_frame_tag "weather" do %>
+  <%= render "home/form" %>
+  <% weather_data = @address.get_weather() %>
+  <main class="container">
+    <h2>Weather information for <%= weather_data["name"] %></h2>
+    <p>
+    <span><b>Current Temperature:</b> <%= weather_data["main"]["temp"] %></span>
+    <span><b>Feels Like:</b> <%= weather_data["main"]["feels_like"] %></span>
+    </p>
+    <p>
+    <span><b>Low Temperature:</b> <%= weather_data["main"]["temp_min"] %></span>
+    <span><b>High Temperature:</b> <%= weather_data["main"]["temp_max"] %></span>
+    </p>
+    <p>
+    <span><b>Cloud Coverage:</b> <%= weather_data["clouds"]["all"] %>%</span>
+    <span><b>Wind Speed:</b> <%= weather_data["wind"]["speed"] %>%</span>
+    </p>
+    <% if @address.updated_at < 10.seconds.ago %>
+      <p>Results updated at <%= @address.updated_at %>
+    <% end %>
+  </main>
+<% end %>
