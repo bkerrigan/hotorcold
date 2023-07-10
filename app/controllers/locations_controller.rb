@@ -1,5 +1,4 @@
 class LocationsController < ApplicationController
-  require "debug"
   def search
     parsed_address = Address.geocode_address(params[:address])
     if parsed_address
@@ -12,6 +11,7 @@ class LocationsController < ApplicationController
     else
       #render :new
       # ERROR
+      # TODO
     end
   end
 end
